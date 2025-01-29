@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con L'Internet</title>
+    <style>
+        body {
+            background-color: #808080; /* Fondo gris */
+            color: black; /* Color del texto */
+            margin: 0;
+            position: relative; /* Posicionamiento relativo para los elementos */
+            height: 100vh; /* Altura completa de la ventana */
+            font-family: Arial, sans-serif; /* Fuente del texto */
+        }
+        .top-left {
+            position: absolute; /* Posicionamiento absoluto */
+            top: 10px; /* Espacio desde la parte superior */
+            left: 10px; /* Espacio desde la izquierda */
+            font-size: 2em; /* Tamaño del texto */
+        }
+        .bottom-left {
+            position: absolute; /* Posicionamiento absoluto */
+            bottom: 10px; /* Espacio desde la parte inferior */
+            left: 10px; /* Espacio desde la izquierda */
+        }
+        a.button {
+            background-color: white; /* Color del botón */
+            color: black; /* Color del texto del botón */
+            padding: 10px 20px; /* Espacio interno del botón */
+            border-radius: 5px; /* Bordes redondeados */
+            text-decoration: none; /* Sin subrayado */
+            font-size: 1.2em; /* Tamaño del texto del botón */
+            transition: background-color 0.3s; /* Transición suave */
+        }
+        a.button:hover {
+            background-color: #f0f0f0; /* Color de fondo del botón al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-left">L'Internet</div>
+    <div class="bottom-left">
+        <a href="https://www.tu-enlace-aqui.com" class="button">Menú</a> <!-- Cambia el enlace aquí -->
+    </div>
+</body>
+</html>
