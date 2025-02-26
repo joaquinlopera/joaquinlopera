@@ -3,34 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenue à mon site web</title>
+    <title>Site Web</title>
     <style>
+        /* Reset de márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo general */
         body {
-            background-color: #ADD8E6; /* Fondo azul claro */
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco por defecto */
+            font-family: 'Arial', sans-serif; /* Fuente limpia y sencilla */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh; /* Altura completa de la ventana */
             margin: 0;
-            text-align: center;
         }
-        a.button {
-            background-color: white; /* Color del botón */
-            color: black; /* Color del texto del botón */
-            padding: 15px 30px; /* Espacio interno del botón */
-            border-radius: 25px; /* Bordes redondeados */
-            text-decoration: none; /* Sin subrayado */
-            font-size: 1.5em; /* Tamaño del texto del botón */
-            transition: background-color 0.3s; /* Transición suave */
+
+        /* Contenedor del título */
+        .title-container {
+            background-color: #808080; /* Rectángulo gris */
+            color: white; /* Texto blanco */
+            padding: 20px 40px; /* Espaciado alrededor del texto */
+            border-radius: 15px; /* Bordes redondeados */
+            text-align: center; /* Centrar el texto */
+            font-size: 2rem; /* Tamaño del texto */
+            font-weight: bold; /* Negrita para el título */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos interactivos */
         }
-        a.button:hover {
-            background-color: #f0f0f0; /* Color de fondo del botón al pasar el ratón */
+
+        /* Estilo del enlace */
+        a {
+            text-decoration: none; /* Quitar el subrayado */
+            color: white; /* El enlace es blanco */
+        }
+
+        /* Efecto interactivo: cambio de escala y sombra */
+        .title-container:hover {
+            transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+            box-shadow: 0 0 20px rgba(128, 128, 128, 0.7); /* Sombra gris */
         }
     </style>
 </head>
 <body>
-    <div>
-        <a href="https://joaquinlopera.github.io/joaquinlopera/menu" class="button">Bienvenue à mon site web</a> <!-- Cambia el enlace aquí -->
-    </div>
+
+    <!-- Contenedor del título con enlace -->
+    <a href="https://juanfeorndorff1.github.io/menu" target="_blank"> <!-- Redirige a otra página -->
+        <div class="title-container">
+            ¡Bienvenue a mon site web!
+        </div>
+    </a>
+
 </body>
 </html>
